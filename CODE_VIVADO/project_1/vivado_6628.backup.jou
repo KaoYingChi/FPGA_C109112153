@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 21 16:53:15 2022
+# Process ID: 6628
+# Current directory: D:/VVV/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7412 D:\VVV\project_1\project_1.xpr
+# Log file: D:/VVV/project_1/vivado.log
+# Journal file: D:/VVV/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VVV/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+place_ports B Y5
+startgroup
+set_property package_pin "" [get_ports [list  G]]
+place_ports R W5
+endgroup
+place_ports G Y4
+place_ports H AA4
+place_ports V AB7
+place_ports left_button T18
+place_ports right_button P16
+place_ports clock Y9
+set_property IOSTANDARD LVCMOS33 [get_ports [list B]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list R]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list left_button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list G]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list right_button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list H]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list V]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/VVV/project_1/project_1.runs/impl_1/vgatest.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/VVV/project_1/project_1.runs/impl_1/vgatest.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 21 15:36:28 2022
+# Process ID: 10048
+# Current directory: D:/VVV/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10012 D:\VVV\project_2\project_2.xpr
+# Log file: D:/VVV/project_2/vivado.log
+# Journal file: D:/VVV/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VVV/project_2/project_2.xpr

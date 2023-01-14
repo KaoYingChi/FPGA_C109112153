@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 14 17:37:22 2022
+# Process ID: 4376
+# Current directory: D:/VVV/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6720 D:\VVV\project_1\project_1.xpr
+# Log file: D:/VVV/project_1/vivado.log
+# Journal file: D:/VVV/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VVV/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reorder_files -fileset constrs_1 -before C:/Users/User/Desktop/XDC/Master.xdc C:/Users/User/Desktop/XDC/Master.xdc
+add_files -fileset constrs_1 -norecurse D:/VVV/Master.xdc
+export_ip_user_files -of_objects  [get_files C:/Users/User/Desktop/XDC/Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/User/Desktop/XDC/Master.xdc
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210249854606B}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210249854606A}
+set_property PROGRAM.FILE {D:/VVV/project_1/project_1.runs/impl_1/vgatest.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/VVV/project_1/project_1.runs/impl_1/vgatest.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210249854606A}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210249854606B}
+close_hw
+close_project
+create_project project_2 D:/VVV/project_2 -part xc7z020clg484-1
+close_project
+open_project D:/VVV/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210249854606B}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210249854606A}
+set_property PROGRAM.FILE {D:/VVV/project_1/project_1.runs/impl_1/vgatest.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/VVV/project_1/project_1.runs/impl_1/vgatest.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_run impl_1
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

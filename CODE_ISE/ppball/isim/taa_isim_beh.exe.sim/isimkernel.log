@@ -1,0 +1,31 @@
+Command line:
+   taa_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52584
+
+Sat Dec 03 16:53:07 2022
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5155.2 Meg
+
+ Total Signals          : 28
+ Total Nets             : 32
+ Total Signal Drivers   : 10
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 7
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 544
+Total Line Count : 34
+Total Line Count : 34
+Total Line Count : 34
+
+ Total Simulation Time: 17.2813 sec
+
+ Current Memory Usage: 4683.34 Meg
+
+Sat Dec 03 16:56:23 2022
+

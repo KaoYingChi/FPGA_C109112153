@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1672220099">
+  <File Type="ROUTE-PWR" Name="vgatest_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="vgatest.tcl"/>
+  <File Type="BITSTR-BMM" Name="vgatest_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="vgatest_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="vgatest_reports.tcl"/>
+  <File Type="OPT-DCP" Name="vgatest_opt.dcp"/>
+  <File Type="OPT-DRC" Name="vgatest_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="vgatest.hwdef"/>
+  <File Type="PWROPT-DCP" Name="vgatest_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="vgatest_placed.dcp"/>
+  <File Type="PLACE-IO" Name="vgatest_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="vgatest_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="vgatest_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="vgatest_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="vgatest_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="vgatest.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="vgatest_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="vgatest.bin"/>
+  <File Type="PHYSOPT-DCP" Name="vgatest_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="vgatest.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="vgatest_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="vgatest_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="vgatest_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="vgatest_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="vgatest_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="vgatest_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="vgatest.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="vgatest_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="vgatest.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vgatest_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vgatest_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="vgatest.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="vgatest_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="vgatest_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="vgatest_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="vgatest_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="vgatest_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="vgatest_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="vgatest_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="vgatest_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="vgatest_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="vgatest_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="vgatest_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vgatest_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="vgatest.bit"/>
+  <File Type="BITSTR-RBT" Name="vgatest.rbt"/>
+  <File Type="BITSTR-NKY" Name="vgatest.nky"/>
+  <File Type="BG-DRC" Name="vgatest.drc"/>
+  <File Type="RDI-RDI" Name="vgatest.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../school_3/ppball/ASD.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../school_3/ppball/ppl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../school_3/ppball/VGA.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="vgatest"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

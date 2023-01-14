@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 21 15:37:11 2022
+# Process ID: 9948
+# Current directory: D:/VVV/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8824 D:\VVV\project_1\project_1.xpr
+# Log file: D:/VVV/project_1/vivado.log
+# Journal file: D:/VVV/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VVV/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/User/Desktop/XDC/Master.xdc
+export_ip_user_files -of_objects  [get_files D:/VVV/Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/VVV/Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list B]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list R]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list left_button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list G]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list right_button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list H]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list V]]
+place_ports B Y5
+startgroup
+set_property package_pin "" [get_ports [list  G]]
+place_ports R W5
+endgroup
+place_ports clock Y9
+place_ports left_button T18
+set_property package_pin "" [get_ports [list  G]]
+place_ports right_button P16
+place_ports G Y4
+place_ports H AA4
+place_ports V AB7
+set_property target_constrs_file C:/Users/User/Desktop/XDC/Master.xdc [current_fileset -constrset]
+save_constraints -force

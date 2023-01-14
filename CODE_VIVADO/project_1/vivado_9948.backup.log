@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 21 15:37:11 2022
+# Process ID: 9948
+# Current directory: D:/VVV/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8824 D:\VVV\project_1\project_1.xpr
+# Log file: D:/VVV/project_1/vivado.log
+# Journal file: D:/VVV/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VVV/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 726.934 ; gain = 107.184
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/User/Desktop/XDC/Master.xdc
+export_ip_user_files -of_objects  [get_files D:/VVV/Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/VVV/Master.xdc
+reset_run synth_1
+reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:29 . Memory (MB): peak = 805.164 ; gain = 1.770
+launch_runs synth_1 -jobs 4
+[Wed Dec 21 15:46:18 2022] Launched synth_1...
+Run output will be captured here: D:/VVV/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 821.020 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+[Wed Dec 21 15:48:08 2022] Launched impl_1...
+Run output will be captured here: D:/VVV/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 821.020 ; gain = 0.000
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1661.676 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1661.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1661.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1786.707 ; gain = 965.688
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list B]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list R]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list left_button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list G]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list right_button]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list H]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list V]]
+place_ports B Y5
+startgroup
+set_property package_pin "" [get_ports [list  G]]
+place_ports R W5
+endgroup
+place_ports clock Y9
+place_ports left_button T18
+set_property package_pin "" [get_ports [list  G]]
+place_ports right_button P16
+place_ports G Y4
+place_ports H AA4
+place_ports V AB7
+set_property target_constrs_file C:/Users/User/Desktop/XDC/Master.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1812.938 ; gain = 0.000
+save_constraints: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1812.938 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 21 16:14:22 2022...
